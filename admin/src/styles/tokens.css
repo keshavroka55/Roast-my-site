@@ -1,0 +1,122 @@
+/* ==========================================================================
+   tokens.css — Design tokens
+   Derived from the reference design system (deep burgundy / cream, serif
+   display at extreme negative tracking, sharp cards, pill buttons).
+   ========================================================================== */
+
+:root {
+    /* ---------- Color roles ---------- */
+    --c-primary: #2d0007;
+    /* brand anchor: primary CTAs, dark bands      */
+    --c-accent: #cd130a;
+    /* warm red: emphasis, meter fills             */
+    --c-link: #fbd4d4;
+    /* blush: links on dark surfaces               */
+    --c-canvas: #ffffff;
+    /* page background                             */
+    --c-surface: #5a000f;
+    /* dark burgundy surfaces (footer, dark cards) */
+    --c-surface-alt: #f1e6ef;
+    /* soft mauve alternating band                 */
+    --c-ink: #1b1817;
+    /* headings / primary text on light            */
+    --c-body: #002622;
+    /* body copy on light                          */
+    --c-muted: #514b4a;
+    /* captions, helper text                       */
+    --c-faint: #f5b1eb;
+    /* placeholders, disabled                      */
+    --c-neutral-1: #dfe7f6;
+    /* cool dividers                               */
+    --c-border: #e4e3e3;
+    /* hairline borders                            */
+
+    /* Decorative palette — no semantic role, brand experimentation only */
+    --c-deco-red: #ec180e;
+    --c-deco-lavender: #fbdaF6;
+    --c-deco-magenta: #fe009b;
+    --c-deco-plum: #350322;
+    --c-deco-charcoal: #24262a;
+
+    /* Text on dark surfaces.
+     NOTE: the source design system flagged "text on surface = 1.21:1" as a
+     contrast failure (dark ink on dark burgundy). We deliberately correct
+     that here by using light foregrounds on --c-surface. */
+    --c-on-dark: #fbfbfb;
+    --c-on-dark-muted: #e7c9cd;
+
+    /* Severity scale (roast intensities) */
+    --c-sev-toasted: #cd130a;
+    --c-sev-charred: #ec180e;
+    --c-sev-cremated: #fe009b;
+
+    /* ---------- Typography ---------- */
+    /* "Society" and "Regola" are the reference's licensed faces and are not
+     publicly distributable. We declare them first so they're used when
+     present, then fall back to close, widely available equivalents. */
+    --font-display: "Society", "Playfair Display", "Georgia", "Times New Roman", serif;
+    --font-body: "Regola", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, monospace;
+
+    /* Fluid display ramp (measured: 64px @768 → 115px @1440) */
+    --fs-display-xxl: clamp(56px, 8vw, 115px);
+    --fs-display-xl: clamp(44px, 5vw, 64px);
+    --fs-display-lg: clamp(38px, 4.4vw, 56px);
+    --fs-display-md: clamp(30px, 3.3vw, 42px);
+    --fs-heading-md: clamp(26px, 2.6vw, 34px);
+    --fs-heading-sm: 15px;
+    --fs-body-md: 17px;
+    --fs-body-sm: 15px;
+    --fs-body-xs: 14px;
+    --fs-button-lg: 19px;
+    --fs-button-md: 16px;
+    --fs-caption: 12px;
+
+    /* Tracking, expressed in em so it scales with the type */
+    --ls-display-xxl: -0.026em;
+    /* ≈ -3px @ 115px   */
+    --ls-display: -0.02em;
+    /* ≈ -1.28px @ 64px */
+    --ls-display-tight: -0.03em;
+    /* ≈ -1.68px @ 56px */
+    --ls-button: 0.1px;
+    --ls-caption: 0.3px;
+
+    /* ---------- Spacing (base unit 8px) ---------- */
+    --sp-xxs: 4px;
+    --sp-xs: 8px;
+    --sp-sm: 12px;
+    --sp-md: 16px;
+    --sp-lg: 20px;
+    --sp-xl: 24px;
+    --sp-xxl: 28px;
+    --sp-xxxl: 32px;
+    --sp-section: 36px;
+    --sp-band: 40px;
+
+    /* ---------- Radius ---------- */
+    --r-none: 0px;
+    --r-full: 9999px;
+
+    /* ---------- Layout ---------- */
+    --container-max: 1440px;
+    --container-wide: 1600px;
+    --gutter: clamp(20px, 3vw, 40px);
+    --gutter-desktop: clamp(40px, 4vw, 64px);
+
+    /* ---------- Motion ---------- */
+    --ease-out: cubic-bezier(0.22, 0.61, 0.36, 1);
+    --dur-fast: 120ms;
+    --dur-base: 200ms;
+
+    /* ---------- Z-index ---------- */
+    --z-header: 100;
+    --z-modal: 1100;
+}
+
+@media (min-width: 1920px) {
+  .container,
+  .container--wide {
+    max-width: 100%;
+  }
+}

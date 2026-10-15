@@ -1,0 +1,15 @@
+{
+  "name": "roastmysite",
+  "private": true,
+  "type": "module",
+  "workspaces": ["backend", "frontend", "admin"],
+  "scripts": {
+    "dev": "concurrently -n backend,frontend,admin -c magenta,cyan,yellow \"npm -w roastmysite-backend run dev\" \"npm -w roastmysite-frontend run dev\" \"npm -w roastmysite-admin run dev\"",
+    "build": "npm -w roastmysite-frontend run build && npm -w roastmysite-admin run build",
+    "start": "node backend/index.js"
+  },
+  "devDependencies": {
+    "concurrently": "^9.0.1"
+  },
+  "engines": { "node": ">=20" }
+}

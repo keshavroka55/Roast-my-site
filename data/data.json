@@ -1,0 +1,55 @@
+{
+  "waitlist": [
+    {
+      "id": "wl_mv9zryv7txlrd3",
+      "email": "test@gmail.cm",
+      "siteUrl": "kd.com",
+      "joinedAt": "2026-10-15T20:29:09.571Z",
+      "status": "pending",
+      "noticeSentAt": null,
+      "roastStartedAt": null,
+      "roastCompletedAt": null,
+      "notes": ""
+    },
+    {
+      "id": "wl_mv9ynfrtxus1pg",
+      "email": "test@gmail.com",
+      "siteUrl": "test.com",
+      "joinedAt": "2026-10-15T19:57:38.585Z",
+      "status": "pending",
+      "noticeSentAt": null,
+      "roastStartedAt": null,
+      "roastCompletedAt": null,
+      "notes": ""
+    },
+    {
+      "id": "wl_mv9xm39pajbydz",
+      "email": "krishjak1244@gmail.com",
+      "siteUrl": "test.com",
+      "joinedAt": "2026-10-15T19:28:36.109Z",
+      "status": "roasting",
+      "noticeSentAt": "2026-10-15T19:30:48.078Z",
+      "roastStartedAt": "2026-10-15T19:31:40.382Z",
+      "roastCompletedAt": null,
+      "notes": ""
+    }
+  ],
+  "roasts": [
+    {
+      "id": "r_mv9xjl6x",
+      "url": "https://www.makesuperai.com/",
+      "score": 34,
+      "verdict": "Lightly toasted",
+      "findings": 3,
+      "createdAt": "2026-10-15T19:26:39.368Z"
+    },
+    {
+      "id": "r_mv9xiv7s",
+      "url": "https://www.keshavroka.com.np/",
+      "score": 13,
+      "verdict": "Barely warm",
+      "findings": 2,
+      "createdAt": "2026-10-15T19:26:05.639Z"
+    }
+  ]
+}
